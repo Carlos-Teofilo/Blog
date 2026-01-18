@@ -78,7 +78,7 @@ public class PostController : ControllerBase
         }
     }
 
-    [HttpGet("posts/category/{category:string}")]
+    [HttpGet("posts/category/{category}")]
     public async Task<IActionResult> GetByCategoryAsync(
         [FromRoute] string category,
         [FromServices] BlogDataContext context,
